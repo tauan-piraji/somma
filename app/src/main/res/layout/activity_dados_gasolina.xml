@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gasolina"
+                    android:padding="10dp"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total estimado de quilômetros"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Média de quilômetros por litro"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Custo médio por litro"
+                    android:layout_margin="10dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total de veículos"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:layout_margin="10dp"
+                    android:paddingTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor"
+                    android:padding="10dp"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/totalKM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="numberDecimal"
+                    android:hint="KM"/>
+
+                <EditText
+                    android:id="@+id/mediaKM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="numberDecimal"
+                    android:hint="KM"/>
+
+                <EditText
+                    android:id="@+id/CustoMedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:inputType="numberDecimal"
+                    android:hint="R$"/>
+
+                <EditText
+                    android:id="@+id/TotalCarro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"/>
+
+                <TextView
+                    android:id="@+id/Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:text="  R$ 0,00"/>
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULAR"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/verde"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionar valores à Viagem?"
+                android:padding="40dp"
+                android:gravity="center"/>
+
+            <Switch
+                android:id="@+id/switchViagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sair"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/voltar1"
+                    android:layout_width="71dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:rotationY="190"
+                    android:src="@drawable/seta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proximo passo"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/seta1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/seta"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:padding="20dp"
+            android:progress="33"
+            android:progressBackgroundTint="@color/roxo"
+            android:progressTint="@color/verde"/>
+
+    </LinearLayout>
+
+</ScrollView>

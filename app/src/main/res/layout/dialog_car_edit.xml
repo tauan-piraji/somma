@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/roxo">
+
+        <TextView
+            android:id="@+id/dialogTextTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFORME SEU CARRO"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <EditText
+        android:id="@+id/DialogEditCarro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Carro..."
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/DialogEditKml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Km/L..."
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black"/>
+
+    <Button
+        android:id="@+id/DialogBtnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/verde"
+        android:text="CONFIRMAR"/>
+
+
+</LinearLayout>
